@@ -1,101 +1,69 @@
-📄 Descripción general del proyecto: InfoCard en React Native
-🎯 Objetivo del proyecto
-Crear una tarjeta de información de usuario en React Native, moderna, elegante y funcional, que permita mostrar de forma atractiva los datos personales básicos de un usuario, con soporte de cambio de tema (claro/oscuro), adaptando estilos automáticamente.
+# Carnet React Native
 
-🏗️ Componentes y funcionalidades principales
-1. Componente InfoCard
-Muestra la información de un usuario:
+Este proyecto es una implementación de un carnet virtual desarrollado con **React Native** que funciona tanto en dispositivos móviles como en la web utilizando **React Native Web**. El diseño es completamente responsivo y ajusta su contenido de manera automática para ofrecer una experiencia de usuario fluida en cualquier dispositivo.
 
-Nombre.
+## Funcionalidades
 
-Edad.
+- Visualiza la información de un carnet virtual, incluyendo nombre, matrícula, carrera y una foto de perfil.
+- Tiene la capacidad de mostrar un reverso con detalles adicionales como la validez y una advertencia.
+- Usa un botón para "Girar" el carnet y alternar entre el anverso y el reverso.
+- La estructura es totalmente responsive para adaptarse a dispositivos móviles y pantallas de escritorio.
 
-Género.
+## Tecnologías Utilizadas
 
-Programa académico.
+- **React Native**: Framework para desarrollar aplicaciones móviles.
+- **React Native Web**: Permite ejecutar aplicaciones de React Native en el navegador web.
+- **React**: Librería de JavaScript para construir interfaces de usuario.
+- **StyleSheet**: Para el diseño de la interfaz y asegurar la compatibilidad entre dispositivos.
 
-Posición en la institución.
+## Requisitos
 
-Nota adicional: "Pertenece a la Magic University of Pennsylvania".
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas en tu máquina:
 
-Incluye imagen del usuario:
+- **Node.js** (versión 14 o superior)
+- **npm** (o **yarn**) para gestionar dependencias.
 
-Imagen cuadrada, tamaño fijo, posicionada a la izquierda de la tarjeta.
+## Instalación
 
-Borde alrededor de la imagen que cambia de color con el tema:
+1. Clona este repositorio:
 
-Negro en modo claro.
+   ```bash
+   git clone https://github.com/tu-usuario/carnet-react-native.git
+2.Navega al directorio del proyecto:
 
-Blanco en modo oscuro.
+   cd carnetEstudiantil
 
-Contiene un botón de cambio de tema:
+3.Instala las dependencias del proyecto:
 
-El botón muestra un ícono (sol 🌞 o luna 🌙) en la esquina superior derecha.
+  npm install
+  # o si usas yarn
+  yarn install
 
-Permite al usuario alternar entre:
+Ejecución
+En dispositivos móviles
+Para ejecutar la aplicación en un dispositivo móvil, sigue estos pasos:
 
-Tema claro: Fondo blanco, texto negro.
+Si estás desarrollando para iOS, utiliza el siguiente comando:
+  npx react-native run-ios
+  npx react-native run-android
 
-Tema oscuro: Fondo oscuro, texto blanco.
+En la Web
+Para ejecutar la aplicación en la web, usa el siguiente comando:
 
-Efectos visuales de la tarjeta:
+  npm run web
+  # o si usas yarn
+  yarn web
 
-Bordes redondeados.
+Estructura del Proyecto
 
-Sombra para simular elevación sobre el fondo.
+/carnet-react-native
+├── /assets/            # Archivos de imagen (foto y QR)   Carnet.js
+├── /src/               # Código fuente de la aplicación
+│   ├── /components/    # Componentes reutilizables
+      ├── /Carnet.js    # Componentes del Carnet
+│   ├── /screens/       # Pantallas de la aplicación
+├── App.js              # Componente principal
+├── package.json        # Información del proyecto y dependencias
+└── README.md           # Este archivo
 
-Margen general adaptado al color del tema activo.
 
-🎨 Estilos aplicados
-Tarjeta (card):
-
-Fondo blanco en modo claro, gris oscuro en modo oscuro.
-
-Sombra (tanto en iOS como en Android).
-
-Bordes redondeados (15px de radio).
-
-Imagen (image):
-
-Cuadrada (130x130px).
-
-Borde grueso adaptativo: Negro (modo claro) o blanco (modo oscuro).
-
-Textos:
-
-Nombre del usuario en fuente más grande y en negrita.
-
-Información adicional (edad, género, programa, posición) en texto normal.
-
-Colores de texto adaptables: negro o blanco según el tema.
-
-Botón de cambio de tema (themeButton):
-
-Absoluto, en la esquina superior derecha.
-
-Ícono dinámico de luna o sol dependiendo del estado del tema.
-
-Clickeable sin afectar la estructura de la tarjeta.
-
-🧩 Dependencias utilizadas
-React Native (react-native):
-
-Componentes base (View, Text, Image, TouchableOpacity, StyleSheet).
-
-Vector Icons (react-native-vector-icons/Ionicons):
-
-Para usar los íconos de sol/luna.
-
-⚡ Resumen visual del layout
-markdown
-Copiar código
----------------------------------------------
-| [Botón de Tema]                         |
-|                                           |
-| [Imagen cuadrada]  [Nombre del usuario]   |
-|                       Edad                |
-|                       Género              |
-|                       Programa            |
-|                       Posición            |
-|                       Universidad         |
---------------------------------------------

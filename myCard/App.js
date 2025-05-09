@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
-import { SafeAreaView } from 'react-native';
-import LoginForm from './components/LoginForm';
-import InfoCard from './components/InfoCard';
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import Carnet from './components/Carnet';
 
 export default function App() {
-  const [userInfo, setUserInfo] = useState(null);
-
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      {userInfo ? (
-        <InfoCard user={userInfo} />
-      ) : (
-        <LoginForm onSubmit={setUserInfo} />
-      )}
-    </SafeAreaView>
+    <View style={styles.container}>
+      <Carnet />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#eee',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+});

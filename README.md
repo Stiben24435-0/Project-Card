@@ -31,7 +31,8 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas en
    git clone https://github.com/tu-usuario/carnet-react-native.git
 2.Navega al directorio del proyecto:
 
-   cd carnetEstudiantil
+   cd Project-Card
+   cd myCard
 
 3.Instala las dependencias del proyecto:
 

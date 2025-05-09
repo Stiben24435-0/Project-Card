@@ -28,7 +28,7 @@ Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas en
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/carnet-react-native.git
+   https://github.com/Stiben24435-0/Project-Card.git
 2.Navega al directorio del proyecto:
 
    cd Project-Card
